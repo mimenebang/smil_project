@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 2.0//EN" "http://www.w3.org/TR/SMIL20/SMIL20.dtd">
+<smil xmlns="http://www.w3.org/2001/SMIL20/Language">
+  
+  <head>
+    <layout>
+      <root-layout width="800px" height="600px"/>
+      <region id="texte" top="10%" left="80%"  fit="meet"/>
+      <region id="audio" top="35%" left="10%"/>
+      <region id="image1" top="10%" left="5%" width="30%" fit="meet"/>
+    </layout>
+  </head>
+
+
+  <body>
+    <par>
+      
+       <audio src="audio1.mp3" region="audio"/>
+       <img src="images/image1.jpg" region="image1"/>
+       <text src="texte.txt" region="texte"/>
+    </par>
+   
+  </body>
+</smil>
