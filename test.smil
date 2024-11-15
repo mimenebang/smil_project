@@ -1,23 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 2.0//EN" "http://www.w3.org/TR/SMIL20/SMIL20.dtd">
 <smil xmlns="http://www.w3.org/2001/SMIL20/Language">
-  
+   
   <head>
+
     <layout>
-      <root-layout width="800px" height="600px"/>
-      <region id="texte" top="10%" left="80%"  fit="meet"/>
+
+     <root-layout width="800px" height="600px"/> 
+
+     <!-- texts area -->
+      <region id="texte1" top="10%" left="50%" height="20px" fit="meet"/>
+      <region id="texte2" top="15%" left="50%" height="20px" fit="meet"/>
+
+      <!-- audios area -->
       <region id="audio" top="35%" left="10%"/>
-      <region id="image1" top="10%" left="5%" width="30%" fit="meet"/>
+
+      <!-- images area -->
+      <region id="image1" top="50%" left="5%" width="30%" fit="meet"/>
+      <region id="image2" top="30%" left="50%" height="400px"/>
+
+      <!-- videos area -->
+      <region id="video1" left="5%" />
+      <region id="video2" top="10%" left="5%" width="30%" fit="meet"/>
+    
     </layout>
+
   </head>
 
 
   <body>
+ 
+    <!-- slide1 -->
     <par>
-      
-       <audio src="audio1.mp3" region="audio"/>
-       <img src="images/image1.jpg" region="image1"/>
-       <text src="texte.txt" region="texte"/>
+       
+      <video src="videos/video1.mp4" dur="48.2s" region="video1"/>
+      <seq>
+
+        <audio src="audios/audio1.mp3" begin="3s"/>
+        <audio src="audios/audio2.mp3" begin="1s"/>
+        <audio src="audios/audio3.mp3" begin="1s"/>
+        <audio src="audios/audio4.mp3" />
+      </seq>
+    </par>
+
+    <!-- slide2 -->
+    <par>
+
+        <audio src="audios/song1.mp3" dur="20s"/>
+        <audio src="audios/audio5.mp3" begin="3s"/>
+        <text src="textes/texte1.txt" region="texte1" begin="6s"/>
+        <text src="textes/texte2.txt" region="texte2" begin="10s"/>
+        <video src="videos/video2.mp4" region="video2"/>
+        <img src="images/image1.jpg" region="image1"/>
+        <img src="images/image2.jpg" region="image2"/>
     </par>
    
   </body>
