@@ -11,6 +11,9 @@
      <!-- texts area -->
       <region id="texte1" top="10%" left="50%" height="20px" fit="meet"/>
       <region id="texte2" top="15%" left="50%" height="20px" fit="meet"/>
+     <region id="texte3" top="10%" left="50%" height="20px" fit="meet"/>
+     <region id="texte4" top="10%" left="50%" height="20px" fit="meet"/>
+     <region id="texte5" top="10%" left="50%" height="20px" fit="meet"/>
 
       <!-- audios area -->
       <region id="audio" top="35%" left="10%"/>
@@ -18,6 +21,9 @@
       <!-- images area -->
       <region id="image1" top="50%" left="5%" width="30%" fit="meet"/>
       <region id="image2" top="30%" left="50%" height="400px"/>
+      <region id="image3" top="50%" left="5%" width="30%" fit="meet"/>
+       <region id="image4" top="50%" left="5%" width="30%" fit="meet"/>
+      <region id="image5" top="50%" left="5%" width="30%" fit="meet"/> 
 
       <!-- videos area -->
       <region id="video1" left="5%" />
@@ -55,5 +61,28 @@
         <img src="images/image2.jpg" region="image2"/>
     </par>
    
+    <!-- slide3 - Premier Quartier de la Lune -->
+    <par>
+        <audio src="audios/audio6.mp3" dur="25s"/> 
+        <text src="textes/texte3.txt" region="texte3" begin="5s"/>
+        <img src="images/image3.jpg" region="image3"/> 
+    </par>
+
+    <!-- slide4 - Deuxième Quartier de la Lune -->
+    <par>
+        <audio src="audios/audio7.mp3" dur="25s"/> 
+        <text src="textes/texte4.txt" region="texte4" begin="5s"/> 
+        <img src "images/image4.jpg" region "image4"/> 
+    </par>
+
+ </par>
+
+    <!-- slide5 - Troisième Quartier de la Lune -->
+    <par>
+        <audio src="audios/audio8.mp3" dur="25s"/> 
+        <text src="textes/texte5.txt" region="texte5" begin="5s"/> 
+        <img src "images/image5.jpg" region "image5"/> 
+    </par>
+
   </body>
 </smil>
