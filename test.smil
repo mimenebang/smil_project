@@ -42,18 +42,25 @@
         <audio src="audios/audio4.mp3" />
       </seq>
     </par>
+    
+    <par>
+      <audio src="audios/song1.mp3" />
 
-    <!-- slide2 -->
+      <!-- slide2 -->
     <par>
 
-        <audio src="audios/song1.mp3" dur="20s"/>
         <audio src="audios/audio5.mp3" begin="3s"/>
         <text src="textes/texte1.txt" region="texte1" begin="6s"/>
         <text src="textes/texte2.txt" region="texte2" begin="10s"/>
-        <video src="videos/video2.mp4" region="video2"/>
-        <img src="images/image1.jpg" region="image1"/>
-        <img src="images/image2.jpg" region="image2"/>
+        <video src="videos/video2.mp4" region="video2" />
+        <img src="images/image1.jpg" region="image1" begin="3s"/>
+        <img src="images/image2.jpg" region="image2" begin="4s"/>
     </par>
-   
+
+    <par>
+       
+      
+    </par>
+  </par>
   </body>
 </smil>
