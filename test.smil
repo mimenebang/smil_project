@@ -15,6 +15,8 @@
       <region id="texte-intro-4" top="20%" left="65%" height="50px" fit="meet"/>
       <region id="texte-intro-5" top="30%" left="65%" height="75px" fit="meet"/>
       <region id="texte-intro-6" top="45%" left="65%" height="50px" fit="meet"/>
+      <region id="texte-intro-7" top="7%"  left="25%" height="20px" width="250px" fit="meet"/>
+      <region id="texte-intro-8" top="17%" left="5%"  height="80px" width="250px" fit="meet"/>
 
       <region id="texte3" top="10%" left="50%" height="20px" fit="meet"/>
       <region id="texte4" top="10%" left="50%" height="20px" fit="meet"/>
@@ -28,7 +30,9 @@
       <region id="image-intro-1" top="50%" left="5%" width="30%" fit="meet"/>
       <region id="image-intro-2" top="30%" left="50%" height="400px"/>
       <region id="image-intro-3" top="60%" left="65%" width="55%" fit="meet"/>  
-
+      <region id="image-intro-4" top="40%" left="5%" width="58%" fit="meet"/> 
+      <region id="image-intro-5" top="10%" left="75%" width=" 35%" fit="meet"/> 
+      
       <region id="image3" top="50%" left="5%" width="30%" fit="meet"/>
       <region id="image4" top="50%" left="5%" width="30%" fit="meet"/>
       <region id="image5" top="50%" left="5%" width="30%" fit="meet"/>  
@@ -61,45 +65,82 @@
     </par>
     
     <par>
-      <audio src="audios/song1.mp3" />
+      <audio src="audios/music.mp3" />
      <seq>
-      <!-- slide2 -->
-     <par>
+        <!-- slide2 -->
+        <par>
 
-        <audio src="audios/audio-intro-5.mp3" begin="3s"/>
-        <text src="textes/texte-intro-1.txt" region="texte-intro-1" begin="6s"/>
-        <text src="textes/texte-intro-2.txt" region="texte-intro-2" begin="10s"/>
-        <video src="videos/video-intro-2.mp4" region="video-intro-2" />
-        <img src="images/image-intro-1.jpg" region="image-intro-1" begin="3s"/>
-        <img src="images/image-intro-2.jpg" region="image-intro-2" begin="4s"/>
-     </par>
+          <audio src="audios/audio-intro-5.mp3" begin="3s"/>
+          <text src="textes/texte-intro-1.txt" region="texte-intro-1" begin="6s"/>
+          <text src="textes/texte-intro-2.txt" region="texte-intro-2" begin="10s"/>
+          <video src="videos/video-intro-2.mp4" region="video-intro-2" />
+          <img src="images/image-intro-1.jpg" region="image-intro-1" begin="3s"/>
+          <img src="images/image-intro-2.jpg" region="image-intro-2" begin="4s"/>
+        </par>
 
-      <!-- slide3 -->
-      <par>
+        <!-- slide3 -->
+        <par>
 
-        <seq>
-         <audio src="audios/audio-intro-6.mp3" />
-         <audio src="audios/audio-intro-7.mp3" />
-         <audio src="audios/audio-intro-8.mp3" />
-        </seq>
+          <seq>
+            <audio src="audios/audio-intro-6.mp3" />
+            <audio src="audios/audio-intro-7.mp3" />
+            <audio src="audios/audio-intro-8.mp3" />
+          </seq>
 
-        <text src="textes/texte-intro-3.txt" region="texte-intro-3" />
-        <text src="textes/texte-intro-4.txt" region="texte-intro-4" begin="3s"/>
-        <text src="textes/texte-intro-5.txt" region="texte-intro-5" begin="21s"/>
-        <text src="textes/texte-intro-6.txt" region="texte-intro-6" begin="34s"/>
-        <img src="images/image-intro-3.jpg"  region="image-intro-3" begin="41s"/>
-        
-        <seq>
-         <video src="videos/video66.mp4" region="video-intro-3" />
+          <text src="textes/texte-intro-3.txt" region="texte-intro-3" />
+          <text src="textes/texte-intro-4.txt" region="texte-intro-4" begin="3s"/>
+          <text src="textes/texte-intro-5.txt" region="texte-intro-5" begin="21s"/>
+          <text src="textes/texte-intro-6.txt" region="texte-intro-6" begin="34s"/>
+          <img src="images/image-intro-3.jpg"  region="image-intro-3" begin="41s"/>
+          
+          <seq>
+            <video src="videos/video66.mp4" region="video-intro-3" />
 
-          <par>
-           <video src="videos/video5.mp4" region="video-intro-3" begin="1s" />
-           <video src="videos/video88.mp4" region="video-intro-4" begin="12s"  />
-          </par>
-        </seq>
-        
-     </par>
-    </seq>
+            <par>
+            <video src="videos/video5.mp4" region="video-intro-3" begin="1s" />
+            <video src="videos/video88.mp4" region="video-intro-4" begin="12s"  />
+            </par>
+          </seq>
+        </par>
+
+        <!-- slide4 -->
+        <par>
+
+          <seq>
+            <audio src="audios/audio-intro-9.mp3" begin="1s" />
+            <audio src="audios/audio-intro-10.mp3" begin="2s" />
+            <audio src="audios/audio-intro-11.mp3" />
+          </seq>
+
+          <text src="textes/texte-intro-7.txt" region="texte-intro-7" begin="1s"/>
+          <text src="textes/texte-intro-8.txt" region="texte-intro-8" begin="5s"/>
+          <img src="images/image-intro-4.jpeg" region="image-intro-4" begin="7s"/>
+          <img src="images/image-intro-5.jpg"  region="image-intro-5" begin="1s"/>
+         
+        </par>
+
+        <!-- slide5- Premier Quartier de la Lune -->
+        <par>
+          <audio src="audios/audio6.mp3" dur="38s"/> 
+          <text src="textes/texte3.txt" region="texte3" begin="5s"/>
+          <img src="images/image3.jpg" region="image3"/> 
+        </par>
+
+        <!-- slide6- Deuxième Quartier de la Lune -->
+        <par>
+            <audio src="audios/audio7.mp3" dur="37s"/> 
+            <text src="textes/texte4.txt" region="texte4" begin="5s"/> 
+            <img src="images/image4.jpg" region="image4"/> 
+        </par>
+
+        <!-- slide7- Troisième Quartier de la Lune -->
+        <par>
+            <audio src="audios/audio8.mp3" dur="52s"/> 
+            <text src="textes/texte5.txt" region="texte5" begin="5s"/> 
+            <img src="images/image5.jpg" region="image5"/> 
+        </par>
+
+      </seq>
 
     </par>
        
@@ -107,28 +148,7 @@
    
   
    
-    <!-- slide3 - Premier Quartier de la Lune -->
-    <par>
-        <audio src="audios/audio6.mp3" dur="38s"/> 
-        <text src="textes/texte3.txt" region="texte3" begin="5s"/>
-        <img src="images/image3.jpg" region="image3"/> 
-    </par>
-
-    <!-- slide4 - Deuxième Quartier de la Lune -->
-    <par>
-        <audio src="audios/audio7.mp3" dur="37s"/> 
-        <text src="textes/texte4.txt" region="texte4" begin="5s"/> 
-        <img src="images/image4.jpg" region="image4"/> 
-    </par>
-
- 
-
-    <!-- slide5 - Troisième Quartier de la Lune -->
-    <par>
-        <audio src="audios/audio8.mp3" dur="52s"/> 
-        <text src="textes/texte5.txt" region="texte5" begin="5s"/> 
-        <img src="images/image5.jpg" region="image5"/> 
-    </par>
+    
 
   </body>
 </smil>
