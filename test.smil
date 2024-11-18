@@ -119,23 +119,23 @@
          
         </par>
 
-        <!-- slide5- Premier Quartier de la Lune -->
+        <!-- slide5- la nouvelle lune-->
         <par>
-          <audio src="audios/audio6.mp3" begin="1s" dur="38s"/> 
+          <audio src="audios/audio6.mp3" dur="44s" begin="3s"/> 
           <text src="textes/texte3.txt" region="texte3" begin="5s"/>
           <img src="images/image3.jpg" region="image3"/> 
         </par>
 
-        <!-- slide6- Deuxième Quartier de la Lune -->
+        <!-- slide6- le premier croissant  -->
         <par>
-            <audio src="audios/audio7.mp3" dur="37s"/> 
+            <audio src="audios/audio7.mp3" dur="40s" begin="3s"/> 
             <text src="textes/texte4.txt" region="texte4" begin="5s"/> 
             <img src="images/image4.jpg" region="image4"/> 
         </par>
 
-        <!-- slide7- Troisième Quartier de la Lune -->
+        <!-- slide7-  Premier Quartier de la Lune  -->
         <par>
-            <audio src="audios/audio8.mp3" dur="52s"/> 
+            <audio src="audios/audio8.mp3" dur="39s" begin="3s"/> 
             <text src="textes/texte5.txt" region="texte5" begin="5s"/> 
             <img src="images/image5.jpg" region="image5"/> 
         </par>
