@@ -121,7 +121,7 @@
 
         <!-- slide5- Premier Quartier de la Lune -->
         <par>
-          <audio src="audios/audio6.mp3" dur="38s"/> 
+          <audio src="audios/audio6.mp3" begin="1s" dur="38s"/> 
           <text src="textes/texte3.txt" region="texte3" begin="5s"/>
           <img src="images/image3.jpg" region="image3"/> 
         </par>
