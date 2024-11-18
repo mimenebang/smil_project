@@ -22,11 +22,16 @@
       <region id="texte4" top="10%" left="50%" height="20px" fit="meet"/>
       <region id="texte5" top="10%" left="50%" height="20px" fit="meet"/> 
      
-
-      <!-- audios area -->
+      <region id="titre" left="70%" top="100px" width="250px" height="30" />
+            
+      <region id="texte1-moon" left="70%" top="200px" width="500px" height="80px" fit="meet" />
+      <region id="texte2-moon" left="70%" top="280px" width="500px" height="80px" fit="meet" />
+      <region id="texte3-moon" left="70%" top="380px" width="500px" height="80px" fit="meet" />
+            
+     <!-- audios area -->
       <region id="audio" top="35%" left="10%"/>
 
-      <!-- images area -->
+     <!-- images area -->
       <region id="image-intro-1" top="50%" left="5%" width="30%" fit="meet"/>
       <region id="image-intro-2" top="30%" left="50%" height="400px"/>
       <region id="image-intro-3" top="60%" left="65%" width="55%" fit="meet"/>  
@@ -37,13 +42,15 @@
       <region id="image4" top="50%" left="5%" width="30%" fit="meet"/>
       <region id="image5" top="50%" left="5%" width="30%" fit="meet"/>  
       
+      <region id="image-moon" left="0" top="0" width="550px" height="450px"  fit="meet"/>
 
-      <!-- videos area -->
+     <!-- videos area -->
       <region id="video-intro-1" left="5%" />
       <region id="video-intro-2" top="10%" left="5%" width="30%" fit="meet"/>
       <region id="video-intro-3" top="10%" left="5%" width="50%" fit="meet" />
       <region id="video-intro-4" top="50%" left="5%" width="50%" fit="meet" />
-    
+      <region id="video" left="0" top="200px" width="550px" height="450px"  fit="meet"/>
+
     </layout>
 
   </head>
@@ -128,27 +135,91 @@
 
         <!-- slide6- le premier croissant  -->
         <par>
-            <audio src="audios/audio7.mp3" dur="40s" begin="3s"/> 
-            <text src="textes/texte4.txt" region="texte4" begin="5s"/> 
-            <img src="images/image4.jpg" region="image4"/> 
+          <audio src="audios/audio7.mp3" dur="40s" begin="3s"/> 
+          <text src="textes/texte4.txt" region="texte4" begin="5s"/> 
+          <img src="images/image4.jpg" region="image4"/> 
         </par>
 
         <!-- slide7-  Premier Quartier de la Lune  -->
         <par>
-            <audio src="audios/audio8.mp3" dur="39s" begin="3s"/> 
-            <text src="textes/texte5.txt" region="texte5" begin="5s"/> 
-            <img src="images/image5.jpg" region="image5"/> 
+          <audio src="audios/audio8.mp3" dur="39s" begin="3s"/> 
+          <text src="textes/texte5.txt" region="texte5" begin="5s"/> 
+          <img src="images/image5.jpg" region="image5"/> 
         </par>
+
+        <!-- lune gibbeuse croissante-->
+        <par> 
+                                      
+          <text src="textes/GC-titre.txt" region="titre" begin="2s" dur="30s" />
+          <seq>
+            <text src="textes/GC-apparence.txt" region="texte1-moon" begin="2s" dur="9s" />
+            <text src="textes/GC-duree.txt" region="texte2-moon" dur="10s" />
+            <text src="textes/GC-cause.txt" region="texte3-moon" />
+          </seq>
+
+          <seq>
+            <img src="images/GC-image2.jpg" region="image-moon"  dur="12s" />
+            <img src="images/GC-image.jpg" region="image-moon" dur="13s" />
+            <video  src="videos/GC-video.mp4" region="video" dur="6s" />
+          </seq>
+
+          <seq>
+            <audio src="audios/GC-titre.mp3"  />
+            <audio src="audios/GC-audio.mp3"  />
+          </seq>
+
+       </par>
+
+       <!--pleine lune-->
+       <par>
+                  
+         <text src="textes/pl-titre.txt" region="titre" begin="2s" dur="32s" />
+
+          <seq>
+            <text src="textes/pl-apparence.txt" region="texte1-moon"  begin="1s" dur="15s" />
+            <text src="textes/pl-duree.txt" region="texte2-moon" dur="10s" />
+            <text src="textes/pl-cause.txt" region="texte3-moon"  />
+          </seq>
+        
+          <seq>
+            <img src="images/pl-image2.jpg" region="image-moon"  dur="15s" />
+            <img src="images/pl-image.jpg" region="image-moon" dur="10s"  />
+            <img src="images/pl-image3.png" region="video"   />
+          </seq>
+
+          <seq>
+           <audio src="audios/pl-titre.mp3"   />
+            <audio src="audios/pl-audio.mp3" />
+          </seq>
+
+       </par>
+
+       <!--lune gibbeuse decroissante-->
+       <par>
+          
+         <text src="textes/GD-titre.txt" region="titre" begin="2s" dur="35s" />
+
+         <seq>
+            <text src="textes/GD-apparence.txt" region="texte1-moon"  begin="1s" dur="15s" />
+            <text src="textes/GD-duree.txt" region="texte2-moon" dur="15s" />
+            <text src="textes/GD-cause.txt" region="texte3-moon"/>
+         </seq>
+      
+          <seq>
+            <img src="images/GD-image.jpg" region="image-moon"    dur="25s" />
+            <video src="videos/GD-video.mp4" region="video" />
+          </seq>
+
+          <seq>
+           <audio src="audios/GD-titre.mp3"  />
+           <audio src="audios/GD-audio.mp3"  />
+         </seq>
+     </par>
 
       </seq>
 
     </par>
        
-      
-   
-  
-   
-    
 
   </body>
 </smil>
