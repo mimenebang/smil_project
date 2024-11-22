@@ -28,6 +28,15 @@
       <region id="texte2-moon" left="70%" top="280px" width="500px" height="80px" fit="meet" />
       <region id="texte3-moon" left="70%" top="380px" width="500px" height="80px" fit="meet" />
             
+      <region id="text1" top="0%" left="30%" width="40%" height="100px" fit="meet" />
+      <region id="text2" top="30%" left="5%" width="40%" height="50px" fit="meet" />
+      <region id="text3" top="30%" left="5%" width="40%" height="50px" fit="meet" />
+      <region id="text4" top="30%" left="5%" width="40%" height="50px" fit="meet" />
+      <region id="text5" top="30%" left="5%" width="40%" height="50px" fit="meet" />
+      <region id="text6" top="80%" left="20%" right="20%" height="100px" fit="meet" />
+      <region id="text7" top="10%" left="20%" right="20%" height="70px" fit="meet" />
+      <region id="text8" top="10%" left="20%" right="20%" height="70px" fit="meet" />
+
      <!-- audios area -->
       <region id="audio" top="35%" left="10%"/>
 
@@ -44,12 +53,25 @@
       
       <region id="image-moon" left="0" top="0" width="550px" height="450px"  fit="meet"/>
 
+      <region id="img1" top="70%" left="20%" right="10%" height="auto" fit="meet" />
+
      <!-- videos area -->
       <region id="video-intro-1" left="5%" />
       <region id="video-intro-2" top="10%" left="5%" width="30%" fit="meet"/>
       <region id="video-intro-3" top="10%" left="5%" width="50%" fit="meet" />
       <region id="video-intro-4" top="50%" left="5%" width="50%" fit="meet" />
+
       <region id="video" left="0" top="200px" width="550px" height="450px"  fit="meet"/>
+
+      <region id="vid1" top="30%" left="55%" width="40%" height="auto" fit="meet" />
+      <region id="vid2" top="30%" left="55%" width="40%" height="auto" fit="meet" />
+      <region id="vid3" top="30%" left="55%" width="40%" height="auto" fit="meet" />
+      <region id="vid4" top="30%" left="55%" width="40%" height="auto" fit="meet" />
+      <region id="vid5" top="10%" left="10%" right="10%" height="auto" fit="meet" />
+      <region id="vid6" top="10%" left="10%" right="10%" height="auto" fit="meet" />
+      
+      <region id="vid7" top="20%" left="10%" right="10%" height="auto" fit="meet" />
+      <region id="vid8" top="20%" left="10%" right="10%" height="auto" fit="meet" />
 
     </layout>
 
@@ -72,7 +94,7 @@
     </par>
     
     <par>
-      <audio src="audios/music.mp3" />
+      <audio src="audios/music.mp3" dur="436.2s" />
      <seq>
         <!-- slide2 -->
         <par>
@@ -164,10 +186,9 @@
           </seq>
 
           <seq>
-            <audio src="audios/GC-titre.mp3"  />
+            <audio src="audios/GC-titre.mp3" begin="2s" />
             <audio src="audios/GC-audio.mp3"  />
           </seq>
-
        </par>
 
        <!--pleine lune-->
@@ -214,7 +235,65 @@
            <audio src="audios/GD-titre.mp3"  />
            <audio src="audios/GD-audio.mp3"  />
          </seq>
-     </par>
+       </par>
+
+
+        <!-- slide11 -->
+
+        <par>
+          <text src="textes/text7.txt" region="text7" dur="15s"/>
+          <audio src="audios/linaaudio7.mp3" dur="15s"/>
+          <video src="videos/vid7.mp4" region="vid7" dur="15s"/>
+        </par>
+         
+        <!-- ۔slide 12 -->
+        <par>
+          <text src="textes/text8.txt" region="text8" dur="15s"/>
+          <audio src="audios/linaaudio8.mp3" dur="15s"/>
+          <video src="videos/vid8.mp4" region="vid8" dur="15s"/>
+        </par>
+
+        <!-- slide13 -->
+        <par>
+          <text src="textes/text1.txt" region="text1" />
+    
+          <seq>
+            <audio src="audios/audio1.mp3" />
+    
+            <par>
+              <audio src="audios/audio2.mp3" dur="12s"/>
+              <text src="textes/text2.txt" region="text2" dur="12s"/>
+              <video src="videos/vid1.mp4" region="vid1" dur="12s"/>
+            </par>
+    
+            <par>
+              <audio src="audios/audio3.mp3" dur="12s"/>
+              <text src="textes/text3.txt" region="text3" dur="12s"/>
+              <video src="videos/vid2.mp4" region="vid2" dur="12s"/>
+            </par>
+    
+            <par>
+              <audio src="audios/audio4.mp3" dur="10s"/>
+              <text src="textes/text4.txt" region="text4" dur="10s"/>
+              <video src="videos/vid3.mp4" region="vid3" dur="10s"/>
+            </par>
+    
+            <par>
+              <audio src="audios/audio5.mp3" dur="10s"/>
+              <text src="textes/text5.txt" region="text5" dur="10s"/>
+              <video src="videos/vid4.mp4" region="vid4" dur="10s"/>
+            </par>
+          </seq>
+        </par>
+
+        <!-- Parallell video and audio -->
+       <par>
+         <audio src="audios/linaaudio6.mp3" dur="16s"/>
+      
+          <video src="videos/vid5.mp4" region="vid5" dur="44s"/>
+          <img src="images/img1.jpg" region="img1" dur="44s"/>
+      
+        </par>
 
       </seq>
 
