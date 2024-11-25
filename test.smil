@@ -288,7 +288,7 @@
 
         <!-- Parallell video and audio -->
        <par>
-         <audio src="audios/linaaudio6.mp3" dur="16s"/>
+         <audio src="audios/linaaudio6.mp3" />
       
           <video src="videos/vid5.mp4" region="vid5" dur="44s"/>
           <img src="images/img1.jpg" region="img1" dur="44s"/>
